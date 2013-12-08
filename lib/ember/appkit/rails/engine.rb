@@ -20,6 +20,7 @@ class Ember::Appkit::Rails::Engine < ::Rails::Engine
     ::Rails::Generators.hidden_namespaces.uniq!
     require 'generators/ember/resource_override'
     require 'generators/ember/scaffold_override'
+    require 'generators/ember/scaffold_controller_override'
   end
 
   initializer :appkit_transpiler do
